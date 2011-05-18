@@ -1,7 +1,7 @@
 ﻿@model ScrumTime.ViewModels.DashboardViewModel
 @{
     var title = "Dashboard";
-    View.Title = title;
+    ViewBag.Title = title;
     <script type="text/javascript">
         $(document).ready(function () {
             document.title = '@AppInfoHelper.PageTitle(title)';
@@ -13,7 +13,7 @@
         font-family: Verdana; font-size: 12px; padding-top: 6px; border-top: 2px solid #999;
         border-left: 2px solid #999; border-right: 2px solid #999; color: #79a52c; font-weight: bold;
         letter-spacing: 1px; font-size: 13px; text-align: center;">
-        @View.Title
+        @ViewBag.Title
     </div>
     <div class="nopadding" style="text-align: center; width: 100%; min-width: 990px;
         border: 2px solid #999;">

@@ -1,9 +1,9 @@
 ﻿@model ScrumTime.Models.LogOnModel
 @{
     Layout = MVC.Shared.Views.NonAuthenticatingLayout;
-    View.Title = "Log On";
+    ViewBag.Title = "Log On";
 }
-<h2>@View.Title</h2>
+<h2>@ViewBag.Title</h2>
 <p>
     Please enter your username and password. @Html.ActionLink("Register", "Register")
     if you don't have an account.

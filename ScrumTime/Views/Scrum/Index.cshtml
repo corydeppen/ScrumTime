@@ -1,7 +1,7 @@
 ﻿@model ScrumTime.ViewModels.ScrumCollectionViewModel
 @{
     var title = "Scrums";
-    View.Title = title;
+    ViewBag.Title = title;
     <script type="text/javascript">
         $(document).ready(function () {
             document.title = '@AppInfoHelper.PageTitle(title)';
@@ -17,7 +17,7 @@
         </div>
         <div style="position: absolute; left: 450px; width: 80px; margin-top: 0px; color: #79a52c;
             font-weight: bold; letter-spacing: 1px; font-size: 13px; text-align: left;">
-            @View.Title
+            @ViewBag.Title
         </div>
     </div>
     <table style="width: 964px; font-family: Verdana; padding: 0; border: 2px solid #999;

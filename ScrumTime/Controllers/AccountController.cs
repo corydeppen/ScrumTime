@@ -88,7 +88,7 @@ namespace ScrumTime.Controllers
 
         public virtual ActionResult Register()
         {
-            ViewModel.PasswordLength = MembershipService.MinPasswordLength;
+            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
             return View();
         }
 
@@ -110,7 +110,7 @@ namespace ScrumTime.Controllers
             }
 
             // If we got this far, something failed, redisplay form
-            ViewModel.PasswordLength = MembershipService.MinPasswordLength;
+            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
             return View(model);
         }
 
@@ -121,7 +121,7 @@ namespace ScrumTime.Controllers
         [Authorize]
         public virtual ActionResult ChangePassword()
         {
-            ViewModel.PasswordLength = MembershipService.MinPasswordLength;
+            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
             return View();
         }
 
@@ -139,7 +139,7 @@ namespace ScrumTime.Controllers
             }
 
             // If we got this far, something failed, redisplay form
-            ViewModel.PasswordLength = MembershipService.MinPasswordLength;
+            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
             return View(model);
         }
 
